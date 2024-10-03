@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
@@ -23,17 +23,17 @@ const Footer = () => {
       © 2024 Maria Khan 
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <Link target="_blank" href="https://www.facebook.com" className="white-500">
-      <FaFacebook className='text-2xl hover:text-[#3b5999]'/>
-      </Link>
-      <Link target="_blank" href="https://www.instagram.com"className="ml-3 white-500">
+      <Link target="_blank" href="https://www.instagram.com/khan__mariah?igsh=MXBqbGJzcjl0OW5rMQ=="className="ml-3 white-500">
       <FaInstagram className='text-2xl hover:text-[#e4405f]' />
       </Link>
-      <Link target="_blank" href="https://www.twitter.com"className="ml-3 white-500">
-      <FaTwitter className='text-2xl hover:text-[#55acee]' />
+      <Link target="_blank" href="https://github.com/MariaKhan10"className="ml-3 white-500">
+      <FaGithub className='text-2xl hover:text-[#55acee]' />
       </Link>
-      <Link target="_blank" href="https://www.linkedin.com"className="ml-3 white-500">
+      <Link target="_blank" href="https://www.linkedin.com/in/mariakhan10/"className="ml-3 white-500">
       <FaLinkedin className='text-2xl hover:text-[#0077b5]' />
+      </Link>
+      <Link target="_blank" href="https://www.facebook.com/profile.php?id=100003139598578&mibextid=ZbWKwL" className="ml-3 white-500">
+      <FaFacebook className='text-2xl hover:text-[#3b5999]'/>
       </Link>
     </span>
   </div>

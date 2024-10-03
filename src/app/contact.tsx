@@ -19,23 +19,23 @@ const Contact = () => {
           style={{ filter: "contrast(1.2) opacity(0.4)" }}
         />
         <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-          <div className="lg:w-1/2 px-6">
+          <div className="lg:w-1/3 px-12">
             <h2 className="title-font font-semibold white-900 tracking-widest text-xs">
               ADDRESS
             </h2>
             <p className="mt-1">
-            Karachi
+            Karachi,Pakistan
             </p>
           </div>
-          <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <div className="lg:w-1/2 px-9 mt-4 lg:mt-0">
             <h2 className="title-font font-semibold white-900 tracking-widest text-xs">
               EMAIL
             </h2>
-            <a className="text-red-900 leading-relaxed">khaanmaria@gmail.com</a>
+            <a className="text-red-900 leading-relaxed">khaanmaria110@gmail.com</a>
             <h2 className="title-font font-semibold white-900 tracking-widest text-xs mt-4">
               PHONE
             </h2>
-            <p className="leading-relaxed">0300-1234567</p>
+            <p className="leading-relaxed">0333-2173102</p>
           </div>
         </div>
       </div>
