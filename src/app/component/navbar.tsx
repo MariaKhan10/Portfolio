@@ -5,9 +5,11 @@ import { FaBeer } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
+  const rgbColor = `rgb(73, 79, 88)`;
   return (
-    <div className="bg-gray-700 z-50 sticky top-0">
-      <header className="text-gray-300 body-font">
+      <div className="z-50 sticky top-0">
+    <div style={{ backgroundColor: rgbColor }}>
+        <header className="text-blue-400 body-font">
         <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-gray-300 mb-4 md:mb-0">
             <Image
@@ -19,19 +21,19 @@ const Navbar = () => {
             <span className="ml-3 text-xl">Maria Khan</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link href={"/"} className="mr-5 hover:text-gray-400 hover:underline">
+            <Link href={"/"} className="mr-5 hover:text-white hover:underline">
               Home
             </Link>
-            <Link href={"#about"} className="mr-5 hover:text-gray-400 hover:underline">
+            <Link href={"#about"} className="mr-5 hover:text-white hover:underline">
               About
             </Link>
-            <Link href={"#skills"} className="mr-5 hover:text-gray-400 hover:underline">
+            <Link href={"#skills"} className="mr-5 hover:text-white hover:underline">
               Skills
             </Link>
-            <Link href={"#project"} className="mr-5 hover:text-gray-400 hover:underline">
+            <Link href={"#project"} className="mr-5 hover:text-white hover:underline">
               Projects
             </Link>
-            <Link href={"#Contact"} className="mr-5 hover:text-gray-400 hover:underline">
+            <Link href={"#Contact"} className="mr-5 hover:text-white hover:underline">
             Contact
             </Link>
           </nav>
@@ -45,6 +47,7 @@ const Navbar = () => {
         </div>
         
       </header>
+    </div>
     </div>
   );
 };

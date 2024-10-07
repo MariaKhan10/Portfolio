@@ -3,9 +3,11 @@ import Link from "next/link";
 import React from "react";
 
 const About = () => {
+  const rgbColor = `rgb(40, 44, 50)`;
   return (
     <div id="about">
       <section className="bg-gray-300 text-gray-600 body-font">
+      <div style={{ backgroundColor: rgbColor }}>
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -17,11 +19,11 @@ const About = () => {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium white-900 text-gray-900">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium white-900 text-white">
               About Me
               <br className="hidden lg:inline-block" />
             </h1>
-            <p className="mb-5 leading-relaxed text-gray-900">
+            <p className="mb-5 leading-relaxed text-white">
               I'm Maria Khan, a passionate front-end developer with a strong
               foundation in web technologies. I specialize in crafting engaging
               and user-friendly interfaces using HTML, CSS, TypeScript, and
@@ -31,7 +33,7 @@ const About = () => {
               ever-evolving field to deliver innovative solutions. Let's build
               something amazing together!
             </p>
-            <p className="mb-5 leading-relaxed text-gray-900">
+            <p className="mb-5 leading-relaxed text-white">
               Key Skills : Proficient in HTML, CSS, TypeScript.Experience with
               front-end frameworks such as React and Next.js. Strong eye for
               design and aesthetics Excellent problem-solving and debugging
@@ -52,8 +54,11 @@ const About = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
+      
     </div>
+    
   );
 };
 
