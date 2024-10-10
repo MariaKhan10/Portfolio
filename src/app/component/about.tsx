@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 
 const About = () => {
-  const rgbColor = `rgb(40, 44, 50)`;
+  const gradientBackground = `linear-gradient(135deg, #1e3a8a, #3b82f6)`; // Matching the hero gradient
   return (
     <div id="about">
-      <section className="bg-gray-300 text-gray-600 body-font">
-      <div style={{ backgroundColor: rgbColor }}>
+      <section className="text-white body-font">
+        <div style={{ background: gradientBackground }} className="py-16 px-8">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -47,7 +47,7 @@ const About = () => {
             </p>
             <div className="flex justify-center">
             <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
-  <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+  <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-800 rounded text-lg">
     View CV
   </button>
 </a>
