@@ -38,7 +38,7 @@ const Project = () => {
                     href={"https://coffee-shop-website-eight.vercel.app/"}
                   >
                     <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
+                      View Live
                     </p>
                   </Link>
                 </div>
@@ -51,57 +51,24 @@ const Project = () => {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/calculatorproject.png")}
+                  src={require("../../../public/pictures/Weatherapp.png")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Calculator Project
+                    Weather Widget App
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Calculator
+                    Weather App
                   </h1>
                   <p className="leading-relaxed">
-                    This is the Mini Project I have made during Learning
-                    Typescript.
+                    This is the Mini Project I have made during Learning Next.js
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://calculator-app-rose-sigma.vercel.app/"}
+                    href={"https://weather-widget-next-js-lyart.vercel.app/"}
                   >
                     <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* { Project} */}
-
-            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/resumebuilder1.png")}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Dynamic Resume Builder
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    CV Builder
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2">
-                    Generates a unique URL for each resume based on the user’s
-                    username, and allow the resume to be shared and downloaded.
-                  </p>
-                  <Link
-                    target="_blank"
-                    href={"https://hackathon-milestone5-mu.vercel.app/"}
-                  >
-                    <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
+                      View Live
                     </p>
                   </Link>
                 </div>
@@ -134,7 +101,7 @@ const Project = () => {
                     href={"https://countdowntimer-theta.vercel.app/"}
                   >
                     <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
+                      View Live
                     </p>
                   </Link>
                 </div>
@@ -148,7 +115,7 @@ const Project = () => {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/resumebuilder.png")}
+                  src={require("../../../public/pictures/resumebuilder1.png")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
@@ -166,7 +133,7 @@ const Project = () => {
                     href={"https://hackathon-milestone5-mu.vercel.app/"}
                   >
                     <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
+                      View Live
                     </p>
                   </Link>
                 </div>
@@ -180,25 +147,58 @@ const Project = () => {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/resumebuilder.png")}
+                  src={require("../../../public/pictures/NumberGuessing.png")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Dynamic Resume Builder
+                    Number Guessing Game
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    CV Builder
+                    Mini Next.js Number Guessing Game App
                   </h1>
                   <p className="leading-relaxed line-clamp-2">
-                    Generates a unique URL for each resume based on the user’s
-                    username, and allow the resume to be shared and downloaded.
+                    Number Guessing Game application allows users to: Start,
+                    pause, and guess the number Try again, and see the number of
+                    guess attempts.
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://hackathon-milestone5-mu.vercel.app/"}
+                    href={"https://number-guessing-game-next-js.vercel.app/"}
                   >
                     <p className="leading-relaxed text-blue-500 hover:underline ">
-                      View project
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* { Project} */}
+
+            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/calculatorproject.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Calculator Project
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Calculator
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2">
+                    This is the Mini Project I have made during Learning
+                    Typescript.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://calculator-app-rose-sigma.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 hover:underline ">
+                      View Live
                     </p>
                   </Link>
                 </div>
