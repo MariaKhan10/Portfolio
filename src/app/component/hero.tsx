@@ -43,13 +43,14 @@ const Hero = () => {
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-3/6">
             <Image
-              className="object-cover object-center rounded-lg mx-auto w-[16rem] h-[20rem] shadow-lg"
+              className="object-cover object-center rounded-full mx-auto w-[17rem] h-[19rem] shadow-2xl border-4 border-blue-600"
               alt="hero"
               width={250}
               height={300}
               src={require("../../../public/pictures/aboutmepic.jpg")}
               style={{
-                filter: "brightness(1.15) contrast(1.1) saturate(1.1)",
+                filter: "brightness(1.1) contrast(1.05) saturate(1.1)",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.6)", // Adding a soft shadow
               }}
             />
           </div>

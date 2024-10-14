@@ -11,11 +11,15 @@ const About = () => {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="object-cover object-center rounded-lg mx-auto w-[300px] h-[400px]"
+              className="object-cover object-center rounded-lg mx-auto w-[300px] h-[400px] shadow-2xl border-4 border-blue-600"
               alt="hero"
               src={require("../../../public/pictures/aboutmepic2.jpg")}
               width={500}
               height={500}
+              style={{
+                filter: "brightness(1.1) contrast(1.05) saturate(1.1)",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.7)", // Adding a soft shadow
+              }}
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -25,7 +29,7 @@ const About = () => {
             </h1>
             <p className="mb-5 leading-relaxed text-white">
               I'm Maria Khan, a passionate front-end developer with a strong
-              foundation in web technologies. I specialize in crafting engaging
+              foundation in web technologies.Currently I am enrolled in Governor House Initiative for Artificial Intelligence and Computing and (PIAIC) where i am learning AI,Web3 and Metaverse Technologies.I specialize in crafting engaging
               and user-friendly interfaces using HTML, CSS, TypeScript, and
               Next.js. With a keen eye for design and a love for coding, I
               strive to create seamless digital experiences that resonate with
