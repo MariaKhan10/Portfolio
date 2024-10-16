@@ -10,7 +10,11 @@ const Project = () => {
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
               My Projects
-            </h1>
+              <br/>
+              </h1>
+              <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-gray"></h2>
+              Tap/Click Any Project to View Live
+            
           </div>
           <div className="flex flex-wrap -m-5 -mt-[5rem]">
             {/* { Project 1 } */}
@@ -35,7 +39,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://coffee-shop-website-eight.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>
@@ -65,7 +69,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://weather-widget-next-js-lyart.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>
@@ -97,7 +101,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://countdowntimer-theta.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>
@@ -129,7 +133,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://number-guessing-game-next-js.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>
@@ -160,7 +164,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://hackathon-milestone5-mu.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>
@@ -191,7 +195,7 @@ const Project = () => {
                     target="_blank"
                     href={"https://calculator-app-rose-sigma.vercel.app/"}
                   >
-                    <p className="leading-relaxed text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
                     </p>
                   </Link>

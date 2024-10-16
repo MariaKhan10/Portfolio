@@ -7,11 +7,11 @@ const About = () => {
   return (
     <div id="about">
       <section className="text-white body-font">
-        <div style={{ background: gradientBackground }} className="py-16 px-8">
+        <div style={{ background: gradientBackground }} className="py-18 px-8">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="object-cover object-center rounded-lg mx-auto w-[300px] h-[400px] shadow-2xl border-4 border-blue-600"
+              className="object-cover object-center rounded-lg mx-auto w-[300px] h-[350px] shadow-2xl border-4 border-blue-600"
               alt="hero"
               src={require("../../../public/pictures/aboutmepic2.jpg")}
               width={500}
