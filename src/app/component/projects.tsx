@@ -202,6 +202,69 @@ const Project = () => {
                 </div>
               </div>
             </div>
+
+            
+            {/* { Project 7 } */}
+            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/EveningDresses.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Royal Attire Fashion Webpage
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Evening Gowns Webpage
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    This is the Mini Project I have made during Learning
+                    Next.js.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://multi-page-website-next-js.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* { Project 8 } */}
+            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/fooddeliverywebpage.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Food Delivery Website
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Simple Food Delivery Landing Page
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    This is the Mini Project I have made during Learning
+                    HTML,CSS.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://food-delivery-webpage-seven.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
