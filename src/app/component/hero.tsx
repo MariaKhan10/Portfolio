@@ -24,7 +24,7 @@ const Hero = () => {
               />
             </h1>
             <div className="w-[400px] h-[2px] bg-blue-700"></div>
-            <p className="mb-8 leading-relaxed text-white">
+            <p className="mb-8 leading-relaxed text-white mt-2">
               Passionate and detail-oriented Frontend Developer with a strong
               background in HTML, CSS, TypeScript/JavaScript and Next.js. Skilled at
               transforming design concepts into engaging and user-friendly
@@ -42,17 +42,19 @@ const Hero = () => {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-3/6">
-            <Image
-              className="object-cover object-center rounded-full mx-auto w-[16rem] h-[16rem] shadow-2xl border-4 border-blue-600"
-              alt="hero"
-              width={250}
-              height={250}
-              src={require("../../../public/pictures/aboutmepic.jpg")}
-              style={{
-                filter: "brightness(1.1) contrast(1.05) saturate(1.1)",
-                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.6)", 
-              }}
-            />
+          <Image
+  className="object-cover object-center rounded-full mx-auto w-[18rem] h-[18rem] shadow-2xl border-4 border-blue-600"
+  alt="hero"
+  width={288} // Same as w-[18rem] in Tailwind (1rem = 16px)
+  height={288} // Same as h-[18rem] in Tailwind
+  src={require("../../../public/pictures/aboutmepic.jpg")}
+  style={{
+    filter: "none", // Remove blur filter
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)", // Add proper shadow
+  }}
+  priority // To load the image in high quality
+/>
+
           </div>
         </div>
       </div>
