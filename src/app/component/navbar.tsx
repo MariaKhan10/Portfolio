@@ -1,23 +1,30 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { Great_Vibes } from 'next/font/google';
+import Image from 'next/image';
+
+const greatVibes = Great_Vibes({
+  weight: ['400'], // Specify weights if necessary
+  subsets: ['latin'], // Specify subsets
+  display: 'swap', // Use font-display: swap for better performance
+});
 
 const Navbar = () => {
   const navbarBackground = `rgba(30, 58, 138, 0.85)`; // A semi-transparent dark blue
   return (
     <div className="z-50 sticky top-0">
-      <div style={{ backgroundColor: navbarBackground }} className="py-4 px-8 shadow-lg">
+      <div style={{ backgroundColor: navbarBackground }} className="py-4 px-4 shadow-lg">
         <header className="body-font">
           <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
               <Image
                 alt="logo"
-                width={40}
-                height={80}
+                width={30}
+                height={70}
                 src={require("../../../public/pictures/logofrontend.jpg")}
               />
-              <span className="ml-3 text-xl">Maria Khan</span>
+              <span className={`${greatVibes.className} "title-font sm:text-4xl text-5xl mb-4 font-bold text-[#f3a136] mt-4 ml-5 mr-1" `}> Maria Khan </span>
             </a>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
               <Link href={"/"} className="mr-5 text-white hover:text-gray-300 hover:underline">
