@@ -14,7 +14,7 @@ const Footer = () => {
               alt="Maria Khan Logo"
               width={30}
               height={30}
-              src={require("../../../public/pictures/logo2.png")}
+              src={require("../../../public/pictures/logo3.png")}
             />
             <span className="ml-3 text-md">Maria Khan</span>
           </a>
