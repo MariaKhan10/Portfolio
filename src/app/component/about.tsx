@@ -3,11 +3,13 @@ import Link from "next/link";
 import React from "react";
 
 const About = () => {
-  const gradientBackground = `linear-gradient(135deg, #1e3a8a, #3b82f6)`; // Matching the hero gradient
+  const gradientBackground = `linear-gradient(135deg, #000000, #1a1a1a)`; // Matching black gradient
+  
   return (
     <div id="about">
       <section className="text-white body-font">
         <div style={{ background: gradientBackground }} className="py-18 px-8">
+
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image

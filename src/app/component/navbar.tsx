@@ -11,18 +11,21 @@ const greatVibes = Great_Vibes({
 });
 
 const Navbar = () => {
-  const navbarBackground = `rgba(30, 58, 138, 0.85)`; // A semi-transparent dark blue
+  const navbarBackground = `linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 25, 25, 3))`; // 60% transparent black
+  
   return (
     <div className="z-50 sticky top-0">
-      <div style={{ backgroundColor: navbarBackground }} className="py-1 px-1 shadow-lg">
+      <div style={{ background: navbarBackground }} className="py-1 px-1 shadow-lg backdrop-blur-lg">
+
+
         <header className="body-font">
           <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
               <Image
                 alt="logo"
-                width={30}
+                width={50}
                 height={70}
-                src={require("../../../public/pictures/logofrontend.jpg")}
+                src={require("../../../public/pictures/logo2.png")}
               />
              <span
   className={`${greatVibes.className} title-font text-2xl sm:text-5xl lg:text-4xl font-bold text-[#f3a136] mt-4 ml-5 mr-1 mb-2`}

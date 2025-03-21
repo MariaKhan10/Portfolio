@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 
-
+@keyframes borderGlow {
+    0% {
+      border-color: rgba(0, 123, 255, 0.3);
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+    }
+    50% {
+      border-color: rgba(0, 123, 255, 0.8);
+      box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.8);
+    }
+    100% {
+      border-color: rgba(0, 123, 255, 0.3);
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+    }
+  }
+  
 
 
 
