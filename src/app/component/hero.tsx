@@ -24,7 +24,7 @@ const Hero = () => {
                 }}
               />
             </h1>
-            <div className="w-[400px] h-[2px] bg-blue-700"></div>
+            <div className="w-[300px] h-[2px] bg-blue-700"></div>
             <p className="mb-8 leading-relaxed text-white mt-2">
               Passionate and detail-oriented Frontend Developer with a strong
               background in HTML, CSS, TypeScript/JavaScript and Next.js. Skilled at
