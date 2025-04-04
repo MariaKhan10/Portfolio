@@ -42,21 +42,25 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-3/6">
-          <Image
-  className="object-cover object-center rounded-full mx-auto w-[18rem] h-[18rem] shadow-2xl border-4 border-blue-600"
-  alt="hero"
-  width={288} // Same as w-[18rem] in Tailwind (1rem = 16px)
-  height={288} // Same as h-[18rem] in Tailwind
-  src={require("../../../public/pictures/aboutmepic.jpg")}
-  style={{
-    filter: "none", // Remove blur filter
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)", // Add proper shadow
-  }}
-  priority // To load the image in high quality
-/>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-3/6 animate-fade-in-up-strong">
+  <Image
+    className="rounded-full mx-auto shadow-2xl border-4 border-blue-600 transform transition-transform duration-700 hover:scale-110 hover:shadow-[0_0_15px_rgba(0,115,255,0.6)]"
+    alt="hero"
+    src={require("../../../public/pictures/image.png")}
+    width={350}
+    height={350}
+    style={{
+      aspectRatio: "1/1",
+      objectFit: "cover",
+      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+    }}
+    priority
+  />
+</div>
 
-          </div>
+
+
+
         </div>
       </div>
     </section>
