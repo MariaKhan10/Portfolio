@@ -27,10 +27,10 @@ const Navbar = () => {
   const navbarBackground = `linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 25, 25, 1))`;
 
   return (
-    <div className="z-50 sticky top-0">
+    <div className="z-30 sticky top-0">
       <div
         style={{ background: navbarBackground }}
-        className="py-2 px-3 shadow-lg backdrop-blur-lg"
+        className="py-4 px-3 shadow-lg backdrop-blur-lg"
       >
         <header className="body-font">
           <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -38,13 +38,13 @@ const Navbar = () => {
             <div className="flex items-center justify-center mx-auto md:mx-0">
               <Image
                 alt="logo"
-                width={40}
-                height={70}
+                width={30}
+                height={60}
                 src="/pictures/logo3.png"
                 className="rounded-lg"
               />
               <span
-                className={`${greatVibes.className} title-font text-2xl sm:text-5xl lg:text-3xl font-bold 
+                className={`${greatVibes.className} title-font text-2xl sm:text-5xl lg:text-2xl font-bold 
                 bg-gradient-to-r from-[#f3a136] via-[#ff4e50] to-[#f9d423] text-transparent bg-clip-text 
                 transition-all duration-500 ease-in-out hover:drop-shadow-[0_0_15px_#ff4e50] 
                 hover:tracking-wide hover:scale-105 ml-4 cursor-pointer`}
