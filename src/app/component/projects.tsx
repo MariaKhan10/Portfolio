@@ -787,7 +787,54 @@ const Project = () => {
                 </div>
               </div>
             </motion.div>
+
+
+ {/* { Project 19 } */}
+ <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/healthcare.png")}
+                />
+                <div className="px-8 py-3 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                  AI-Powered Instant Medical Help Assistant-SehatBot 🩺
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    AI Health Assistant App built with (Python + Streamlit + Gemini)
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    Built personal health assistant, guiding you through symptoms, providing remedies, and answering your health-related queries in real-time! using Python,Streamlit and Gemini.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://sehatbot.streamlit.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+
+
           </div>
+
         </div>
       </section>
     </div>
