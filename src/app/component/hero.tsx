@@ -18,22 +18,16 @@ const Hero = () => {
               <br className="hidden lg:inline-block" />
               <Typewriter
                 options={{
-                  strings: ["Maria Khan", "Front-End Developer", "Botanist", "Web Designer"],
+                  strings: ["Maria Khan", "Full Stack Developer", "Agentic AI Engineer", "Web Designer"],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h1>
             <div className="w-[300px] h-[2px] bg-blue-700"></div>
-            <p className="mb-8 leading-relaxed text-white mt-2">
-              Passionate and detail-oriented Frontend Developer with a strong
-              background in HTML, CSS, TypeScript/JavaScript and Next.js. Skilled at
-              transforming design concepts into engaging and user-friendly
-              interfaces that enhance the overall user experience. Continuously
-              staying side by side of industry trends and emerging technologies to
-              deliver cutting-edge solutions. Committed to creating visually
-              appealing and functional websites that exceed client expectations.
-            </p>
+         <p className="mb-8 leading-relaxed text-white mt-2">
+  Agentic AI and Full Stack Developer specializing in AI-native, cloud-ready applications. Experienced in building end-to-end systems using Next.js and FastAPI, integrating LLM-powered automation, RAG pipelines, and intelligent agent workflows. Focused on designing scalable architectures that bridge artificial intelligence with real-world applications.
+</p>
             <div className="flex justify-center">
               <Link href={"#Contact"}>
                 <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">

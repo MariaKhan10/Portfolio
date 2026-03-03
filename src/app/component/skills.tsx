@@ -32,23 +32,26 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap -m-4 -mt-[5rem]">
-            {[
-              { name: "HTML/CSS", level: "100%" },
-              { name: "Python", level: "95%" },
-              { name: "TypeScript/JavaScript", level: "90%" },
-              { name: "Next.js", level: "85%" },
-              { name: "WordPress", level: "75%" },
-              { name: "React", level: "60%" },
-            ].map((skill, index) => (
-              <motion.div
-                key={index}
-                className="p-4 w-[100%] md:w-1/3"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{ once: false, amount: 0.2 }}
-              >
+        <div className="flex flex-wrap -m-4 -mt-[5rem]">
+  {[
+    { name: "Python", level: "90%" },
+    { name: "FastAPI", level: "85%" },
+    { name: "Next.js", level: "85%" },
+    { name: "TypeScript/JavaScript", level: "85%" },
+    { name: "Prompt Engineering", level: "85%" },
+    { name: "OpenAI Agents SDK", level: "80%" },
+    { name: "Docker", level: "75%" },
+    { name: "React", level: "75%" },
+    { name: "HTML/CSS", level: "80%" }
+  ].map((skill, index) => (
+    <motion.div
+      key={index}
+      className="p-4 w-[100%] md:w-1/3"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
+    >
                 <div className="flex rounded-lg h-full p-8 flex-col bg-gray-900 bg-opacity-40">
                   <div className="flex items-center mb-3">
                     <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">

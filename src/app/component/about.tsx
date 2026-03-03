@@ -29,28 +29,17 @@ const About = () => {
               About Me
               <br className="hidden lg:inline-block" />
             </h1>
-            <p className="mb-5 leading-relaxed text-white">
-              I'm Maria Khan, a passionate front-end developer with a strong
-              foundation in web technologies.Currently I am enrolled in Governor House Initiative for Artificial Intelligence and Computing and (PIAIC) where i am learning AI,Web3 and Metaverse Technologies.I specialize in crafting engaging
-              and user-friendly interfaces using HTML, CSS, TypeScript, and
-              Next.js. With a keen eye for design and a love for coding, I
-              strive to create seamless digital experiences that resonate with
-              users. I'm dedicated to continuously learning and growing in this
-              ever-evolving field to deliver innovative solutions. Let's build
-              something amazing together!
-            </p>
-            <p className="mb-5 leading-relaxed text-white">
-              Key Skills : Proficient in HTML, CSS, TypeScript.Experience with
-              front-end frameworks such as React and Next.js. Strong eye for
-              design and aesthetics Excellent problem-solving and debugging
-              skills.Commitment to delivering high-quality user experiences.
-              Ability to collaborate effectively with cross-functional teams.
-              Developed and implemented responsive web designs that
-              optimized user interaction and engagement.
-              Ensured cross-browser compatibility and responsive design across
-              various devices.On the Basis of my Education I hold
-              Master's Degree in Science from Karachi University.
-            </p>
+         <p className="mb-5 leading-relaxed text-white">
+  I'm Maria Khan, an Agentic AI and Full Stack Developer focused on building AI-native, cloud-ready, and spec-driven applications. I design and develop end-to-end systems using Next.js, FastAPI, and modern databases while integrating LLM-powered automation and intelligent agent workflows.
+  
+  Currently enrolled in PIAIC and GIAIC, I specialize in developing scalable applications that combine frontend excellence with backend architecture and AI orchestration.
+</p>
+
+<p className="mb-5 leading-relaxed text-white">
+  My expertise includes building RAG-based systems, AI task automation platforms, and cloud-native applications deployed with Docker and Kubernetes. I enjoy architecting production-ready solutions that bridge artificial intelligence with real-world use cases.
+  
+  Tech Stack: Python, FastAPI, Next.js, TypeScript, PostgreSQL, Qdrant, OpenAI Agents SDK, Docker, Kubernetes.
+</p>
             <div className="flex justify-center">
             <a href="/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
   <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-800 rounded text-lg">
