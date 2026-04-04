@@ -38,7 +38,148 @@ const Project = () => {
 
           <br />
           <div className="flex flex-wrap -m-5 -mt-[5rem]">
-            {/* { Project 1 } */}
+
+
+
+  {/* { Project 1 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/hans.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Ecommerce website 
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                  Online Clothing store
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    “The Hans Apparel is an online clothing brand that offers premium, stylish, and modern outfits designed to combine elegance, comfort, and quality.”
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://the-hans-apparel.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+{/* { Project 2 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/task.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Todo Full-Stack Web Application 
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                  Todo Application
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    Built a full stack todo application that stores tasks in memory using Claude Code and Spec-Kit Plus with AI-Powered Todo Chatbot.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2FF910F7BF92035131%21s64ed81e272af401c93f05a7c166f8bc4%3Fithint%3Dvideo%26e%3DRHxSxw%26migratedtospo%3Dtrue&cid=F910F7BF92035131&id=F910F7BF92035131%21s64ed81e272af401c93f05a7c166f8bc4&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy9mOTEwZjdiZjkyMDM1MTMxL0lRRGlnZTFrcjNJY1FKUHdXbndXYjR2RUFRS0VyY2x5RU5qUDFrdGpJZ0hFLTZFP2U9Ukh4U3h3&v=photos"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+ {/* { Project 3 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }} // 👈 yeh ensure karega ke scroll pe chale
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/book.png")}
+                />
+                <div className="px-10 py-8 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    AI book with an embedded RAG chatbot
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    AI-generated book platform
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                   Built an AI-powered book using Docusaurus, integrated with a RAG chatbot for intelligent content-based Q&A and personalization features
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2FF910F7BF92035131%21s7eb64ff0a81540b3ba8797329956a876%3Fithint%3Dvideo%26e%3D7cD9pA%26migratedtospo%3Dtrue&cid=F910F7BF92035131&id=F910F7BF92035131%21s7eb64ff0a81540b3ba8797329956a876&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy9mOTEwZjdiZjkyMDM1MTMxL0lRRHdUN1otRmFpelFMcUhsektaVnFoMkFTSlUwT1RHYkhwZ2J6YURvMEw2V0hZP2U9N2NEOXBB&v=photos"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+
+ {/* { Project 4 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +221,10 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* { Project 2 } */}
+
+
+
+            {/* { Project 5 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -121,7 +265,7 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* { Project 3 } */}
+            {/* { Project 6 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -165,7 +309,7 @@ const Project = () => {
 
 
 
-            {/* { Project 4 } */}
+{/* { Project 11 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -181,21 +325,24 @@ const Project = () => {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/hans.png")}
+                  src={require("../../../public/pictures/unit.png")}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="px-6 py-8 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Ecommerce website 
+                    Unit Convertor
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Online Clothing store
+                    Unit + Currency Covertor Web App (Python + Streamlit)
                   </h1>
                   <p className="leading-relaxed line-clamp-2 text-gray-700">
-                    “The Hans Apparel is an online clothing brand that offers premium, stylish, and modern outfits designed to combine elegance, comfort, and quality.”
+                    Unit Converter is a simple tool designed to convert various
+                    units seamlessly.
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://the-hans-apparel.vercel.app/"}
+                    href={
+                      "https://mariakhan10-project-01-unit-convertor-vhxxd6.streamlit.app/"
+                    }
                   >
                     <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
@@ -206,10 +353,9 @@ const Project = () => {
             </motion.div>
 
 
+          
 
-
-
- {/* { Project 5 } */}
+ {/* { Project 7 } */}
  <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -255,7 +401,7 @@ const Project = () => {
 
 
 
-            {/* { Project 6 } */}
+            {/* { Project 8 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -296,48 +442,8 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* { Project 7 } */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              whileHover={{
-                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
-                scale: 1.02,
-              }}
-              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
-            >
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/staticresume.png")}
-                />
-                <div className="px-8 py-6 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Static Resume
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Static Resume Built with Html, CSS, and JavaScript.
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2 text-gray-700">
-                    This is the Mini Project I have made during Learning HTML,
-                    CSS.
-                  </p>
-                  <Link
-                    target="_blank"
-                    href={"https://hackathon-milestone-1-plum.vercel.app/"}
-                  >
-                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
-                      View Live
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
 
-            {/* { Project 8 } */}
+            {/* { Project 10 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -378,50 +484,8 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* { Project 9 } */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              whileHover={{
-                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
-                scale: 1.02,
-              }}
-              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
-            >
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/unit.png")}
-                />
-                <div className="px-6 py-8 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Unit Convertor
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Unit + Currency Covertor Web App (Python + Streamlit)
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2 text-gray-700">
-                    Unit Converter is a simple tool designed to convert various
-                    units seamlessly.
-                  </p>
-                  <Link
-                    target="_blank"
-                    href={
-                      "https://mariakhan10-project-01-unit-convertor-vhxxd6.streamlit.app/"
-                    }
-                  >
-                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
-                      View Live
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* { Project 10 } */}
+            
+            {/* { Project 12 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -464,7 +528,7 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* { Project 11 } */}
+            {/* { Project 13 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -844,7 +908,7 @@ const Project = () => {
              <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: false, amount: 0.2 }} 
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{
                 boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",

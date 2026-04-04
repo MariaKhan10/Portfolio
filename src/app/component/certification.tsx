@@ -36,15 +36,17 @@ const Certification = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center -m-3">
+          <div className="flex flex-wrap justify-center -m-6">
             {[
               "certificate1.png",
               "certificate2.png",
               "certificate3.png",
+              "certificate4.png",
+              "certificate5.png",
             ].map((cert, index) => (
               <motion.div
                 key={index}
-                className="p-4 w-full md:w-1/2 lg:w-1/3 flex flex-col items-center"
+                className="p-8 w-full md:w-1/2 lg:w-1/3 flex flex-col items-center"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
