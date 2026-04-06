@@ -5,15 +5,15 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
-  const gradientBackground = `linear-gradient(135deg, #000000, #1a1a1a)`; // Black gradient
+  const gradientBackground = `black`; // Black gradient
 
   return (
     <section className="text-white body-font">
-      <div style={{ background: gradientBackground }} className="py-29">
+      <div style={{ background: gradientBackground }} className="py-2">
 
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cyan-400">
               I am
               <br className="hidden lg:inline-block" />
               <Typewriter
@@ -30,9 +30,14 @@ const Hero = () => {
 </p>
             <div className="flex justify-center">
               <Link href={"#Contact"}>
-                <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                  Contact
-                </button>
+                <button className="inline-flex items-center justify-center text-white 
+bg-cyan-600 backdrop-blur-md 
+py-2 px-8 rounded-lg text-lg 
+transition-all duration-300 
+hover:bg-teal-500 hover:scale-105 
+hover:shadow-[0_0_15px_rgba(79,172,254,0.6)]">
+  Contact
+</button>
               </Link>
             </div>
           </div>

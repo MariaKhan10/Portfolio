@@ -1,17 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdOutlineFileDownload, MdMenu, MdClose } from "react-icons/md";
 import { Great_Vibes } from "next/font/google";
-import Image from "next/image";
 import { Home, Info, Briefcase, Code, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const greatVibes = Great_Vibes({
   weight: ["400"],
   subsets: ["latin"],
-  display: "swap",
 });
 
 const navItems = [
@@ -24,75 +22,68 @@ const navItems = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navbarBackground = `linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 25, 25, 1))`;
+  const [scrolled, setScrolled] = useState(false); // ✅ inside component
+
+  // ✅ scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="z-30 sticky top-0">
+    <div className="z-50 sticky top-0">
+      {/* Clean Glass Navbar */}
       <div
-        style={{ background: navbarBackground }}
-        className="py-4 px-3 shadow-lg backdrop-blur-lg"
+        className={`py-4 px-6 transition-all duration-500 ${
+          scrolled ? "backdrop-blur-xl bg-black/70" : "bg-black/100"
+        }`}
       >
-        <header className="body-font">
-          <div className="container mx-auto flex flex-wrap items-center justify-between">
-            {/* Logo + Name Centered on Mobile */}
-            <div className="flex items-center justify-center mx-auto md:mx-0">
-              <Image
-                alt="logo"
-                width={30}
-                height={60}
-                src="/pictures/logo3.png"
-                className="rounded-lg"
-              />
-              <span
-                className={`${greatVibes.className} title-font text-2xl sm:text-5xl lg:text-2xl font-bold 
-                bg-gradient-to-r from-[#f3a136] via-[#ff4e50] to-[#f9d423] text-transparent bg-clip-text 
-                transition-all duration-500 ease-in-out hover:drop-shadow-[0_0_15px_#ff4e50] 
-                hover:tracking-wide hover:scale-105 ml-4 cursor-pointer`}
-              >
-                Maria Khan
-              </span>
-            </div>
+        <div className="container mx-auto flex items-center justify-between">
+          {/* LOGO */}
+          <span
+            className={`${greatVibes.className} text-2xl font-semibold tracking-wide bg-gradient-to-r from-[#4facfe] to-[#00f2fe] text-transparent bg-clip-text`}
+          >
+            Maria Khan
+          </span>
 
-            {/* Hamburger Button - Small Screens */}
-            <button
-              onClick={() => setMenuOpen(true)}
-              className="md:hidden text-white text-3xl absolute left-4 top-5"
-            >
-              <MdMenu />
-            </button>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex md:items-center md:space-x-6">
-              {navItems.map((item, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.1, color: "#f3a136" }}
-                  whileTap={{ scale: 0.9 }}
-                  className="flex items-center space-x-2 text-white hover:text-gray-300 transition duration-300"
+          {/* NAV LINKS */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              <Link key={index} href={item.href}>
+                <motion.span
+                  whileHover={{ y: -2 }}
+                  className="text-gray-300 hover:text-white transition duration-300 text-sm tracking-wide cursor-pointer"
                 >
-                  <item.icon className="w-5 h-5" />
-                  <Link href={item.href} className="hover:underline">
-                    {item.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </nav>
+                  {item.label}
+                </motion.span>
+              </Link>
+            ))}
+          </nav>
 
-            {/* CV Download Button - Desktop Only */}
-            <a href="/cv/cv.pdf" download="CV.pdf" className="hidden md:block">
-              <button className="inline-flex text-white items-center bg-indigo-900 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base">
-                Download CV
-                <MdOutlineFileDownload className="text-xl ml-2" />
-              </button>
-            </a>
-          </div>
-        </header>
+          {/* CTA BUTTON */}
+          <a href="/cv/cv.pdf" download="CV.pdf" className="hidden md:block">
+            <button className="text-white text-sm px-5 py-2 rounded-full bg-gradient-to-r from-[#4facfe] to-[#00f2fe] hover:scale-105 transition duration-300">
+              Download CV
+            </button>
+          </a>
+
+          {/* MOBILE MENU */}
+          <button
+            onClick={() => setMenuOpen(true)}
+            className="md:hidden text-white text-3xl"
+          >
+            <MdMenu />
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Full Screen Menu */}
+      {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center">
-          {/* Close Button */}
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-xl flex flex-col items-center justify-center z-50">
           <button
             onClick={() => setMenuOpen(false)}
             className="absolute top-6 right-6 text-white text-4xl"
@@ -100,30 +91,15 @@ const Navbar = () => {
             <MdClose />
           </button>
 
-          {/* Mobile Nav Links */}
-          <div className="flex flex-col space-y-6 text-white text-lg text-center">
+          <div className="flex flex-col space-y-8 text-white text-xl">
             {navItems.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="flex items-center space-x-2 hover:text-gray-300 transition duration-300"
-              >
-                <item.icon className="w-6 h-6" />
-                <Link href={item.href} onClick={() => setMenuOpen(false)}>
-                  {item.label}
-                </Link>
-              </motion.div>
+              <Link key={index} href={item.href} onClick={() => setMenuOpen(false)}>
+                <motion.div whileHover={{ scale: 1.1 }}>{item.label}</motion.div>
+              </Link>
             ))}
 
-            {/* Mobile CV Button */}
-            <a
-              href="/cv/cv.pdf"
-              download="CV.pdf"
-              onClick={() => setMenuOpen(false)}
-            >
-              <button className="mt-6 text-white items-center bg-indigo-900 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600 rounded text-base">
+            <a href="/cv/cv.pdf" download="CV.pdf">
+              <button className="mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#4facfe] to-[#00f2fe]">
                 Download CV
               </button>
             </a>

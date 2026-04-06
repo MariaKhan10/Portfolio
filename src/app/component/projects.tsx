@@ -10,34 +10,43 @@ const Project = () => {
       <section className="bg-[linear-gradient(135deg,#000000,#1a1a1a)] text-gray-200 body-font">
         <div className="container px-5 py-24 mx-auto">
         <motion.div
-  initial={{ opacity: 0, y: -50 }}
+  initial={{ opacity: 0, y: -20 }}
   whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: false, amount: 0.2 }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  className="flex flex-col text-center w-full mb-20"
+  transition={{ duration: 0.6 }}
+  className="flex flex-col text-center w-full mb-16"
 >
-  <motion.h1
-    className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
-    whileHover={{
-      scale: 1.05,
-      textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)",
-    }}
-  >
-    My Projects
-    <br />
-  </motion.h1>
   <motion.h2
-    className="sm:text-2xl text-2xl font-medium title-font mb-4 text-gray underline"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 0.5, duration: 0.8 }}
+    className="text-sm uppercase tracking-widest font-semibold mb-2 text-[#4facfe]"
+    initial={{ opacity: 0, y: -20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
   >
-    Tap/Click Any Project to View Live
+    Projects
   </motion.h2>
+
+  <motion.h1
+    className="sm:text-4xl text-3xl font-bold"
+    initial={{ opacity: 0, y: -20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, delay: 0.2 }}
+  >
+    <span className="bg-gradient-to-r from-[#4facfe] via-[#00f2fe] to-[#00d4ff] text-transparent bg-clip-text">
+      My Projects
+    </span>
+  </motion.h1>
+
+  {/* Divider */}
+  <div className="w-24 h-[3px] mx-auto mt-4 bg-gradient-to-r from-[#4facfe] to-transparent"></div>
+
+  {/* Subtitle */}
+  <p className="text-gray-400 mt-6 text-xl">
+    Tap / Click any project to view live
+  </p>
 </motion.div>
 
           <br />
-          <div className="flex flex-wrap -m-5 -mt-[5rem]">
+          <br />
+          <div className="flex flex-wrap -m-8 -mt-[5rem]">
 
 
 

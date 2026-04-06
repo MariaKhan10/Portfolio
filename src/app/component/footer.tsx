@@ -1,40 +1,60 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 const Footer = () => {
   return (
-    <div style={{ background: "linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 25, 25, 3))" }} className="text-white py-1">
-
-      <footer className="text-gray-600 body-font">
-        <div className="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+    <div
+      style={{ background: "black" }}
+      className="text-white py-3 backdrop-blur-md"
+    >
+      <footer className="body-font">
+        <div className="container px-5 mx-auto flex flex-col sm:flex-row items-center justify-between">
+          
+          {/* Logo + Name */}
+          <a className={`flex title-font items-center text-white mb-4 sm:mb-0 ${greatVibes.className}`}>
             <Image
               alt="Maria Khan Logo"
-              width={30}
-              height={30}
+              width={40}
+              height={40}
               src={require("../../../public/pictures/logo3.png")}
+              className="rounded-full"
             />
-            <span className="ml-3 text-md">Maria Khan</span>
+            <span className="ml-3 text-2xl bg-gradient-to-r from-[#4facfe] via-[#00f2fe] to-[#00d4ff] text-transparent bg-clip-text">
+              Maria Khan
+            </span>
           </a>
-          <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-            © 2025 Maria Khan
+
+          {/* Copyright */}
+          <p className="text-sm text-gray-300 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-700 sm:py-2 sm:mt-0 mt-4">
+            © 2026 Maria Khan
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <Link target="_blank" href="https://www.instagram.com/khan__mariah?igsh=MXBqbGJzcjl0OW5rMQ==" className="ml-3 text-gray-500 hover:text-[#e4405f] transition duration-300 ease-in-out">
-              <FaInstagram className="text-2xl" />
+
+          {/* Social Icons */}
+          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-4">
+            <Link target="_blank" href="https://www.instagram.com/khan__mariah?igsh=MXBqbGJzcjl0OW5rMQ==" className="text-gray-400 hover:text-[#e4405f] transition duration-300 ease-in-out">
+              <FaInstagram className="text-2xl hover:scale-110 transition-transform duration-300" />
             </Link>
-            <Link target="_blank" href="https://github.com/MariaKhan10" className="ml-3 text-gray-500 hover:text-[#333] transition duration-300 ease-in-out">
-              <FaGithub className="text-2xl" />
+            <Link target="_blank" href="https://github.com/MariaKhan10" className="text-gray-400 hover:text-gray-100 transition duration-300 ease-in-out">
+              <FaGithub className="text-2xl hover:scale-110 transition-transform duration-300" />
             </Link>
-            <Link target="_blank" href="https://www.linkedin.com/in/mariakhan10/" className="ml-3 text-gray-500 hover:text-[#0077b5] transition duration-300 ease-in-out">
-              <FaLinkedin className="text-2xl" />
+            <Link target="_blank" href="https://www.linkedin.com/in/mariakhan10/" className="text-gray-400 hover:text-[#0077b5] transition duration-300 ease-in-out">
+              <FaLinkedin className="text-2xl hover:scale-110 transition-transform duration-300" />
             </Link>
-            <Link target="_blank" href="https://www.facebook.com/profile.php?id=100003139598578&mibextid=ZbWKwL" className="ml-3 text-gray-500 hover:text-[#3b5999] transition duration-300 ease-in-out">
-              <FaFacebook className="text-2xl" />
+            <Link target="_blank" href="https://www.facebook.com/profile.php?id=100003139598578&mibextid=ZbWKwL" className="text-gray-400 hover:text-[#3b5999] transition duration-300 ease-in-out">
+              <FaFacebook className="text-2xl hover:scale-110 transition-transform duration-300" />
             </Link>
           </span>
+
         </div>
       </footer>
     </div>
