@@ -175,7 +175,7 @@ const Project = () => {
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2FF910F7BF92035131%21s7eb64ff0a81540b3ba8797329956a876%3Fithint%3Dvideo%26e%3D7cD9pA%26migratedtospo%3Dtrue&cid=F910F7BF92035131&id=F910F7BF92035131%21s7eb64ff0a81540b3ba8797329956a876&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy9mOTEwZjdiZjkyMDM1MTMxL0lRRHdUN1otRmFpelFMcUhsektaVnFoMkFTSlUwT1RHYkhwZ2J6YURvMEw2V0hZP2U9N2NEOXBB&v=photos"}
+                    href={"https://mariakhan10.github.io/AI-Spec-Driven-Book/"}
                   >
                     <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
