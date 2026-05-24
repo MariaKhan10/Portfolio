@@ -119,14 +119,14 @@ const Project = () => {
                   <p className="leading-relaxed line-clamp-2 text-gray-700">
                     Built a full stack todo application that stores tasks in memory using Claude Code and Spec-Kit Plus with AI-Powered Todo Chatbot.
                   </p>
-                  <Link
-                    target="_blank"
-                    href={"/videos/Task_AI.mp4"}
-                  >
-                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
-                      View Live
-                    </p>
-                  </Link>
+             <a
+  href="/videos/Task_AI.mp4"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="leading-relaxed text-blue-500 font-bold hover:underline"
+>
+  View Live
+</a>
                 </div>
               </div>
             </motion.div>
