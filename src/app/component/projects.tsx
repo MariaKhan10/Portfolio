@@ -120,7 +120,7 @@ const Project = () => {
                     Built a full stack todo application that stores tasks in memory using Claude Code and Spec-Kit Plus with AI-Powered Todo Chatbot.
                   </p>
              <a
-  href="/videos/Task_AI.mp4"
+  href="https://res.cloudinary.com/dxvor3jom/video/upload/q_auto/f_auto/v1779660778/Task_AI_ildvrt.mp4"
   target="_blank"
   rel="noopener noreferrer"
   className="leading-relaxed text-blue-500 font-bold hover:underline"
