@@ -121,7 +121,7 @@ const Project = () => {
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2FF910F7BF92035131%21s64ed81e272af401c93f05a7c166f8bc4%3Fithint%3Dvideo%26e%3DRHxSxw%26migratedtospo%3Dtrue&cid=F910F7BF92035131&id=F910F7BF92035131%21s64ed81e272af401c93f05a7c166f8bc4&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy9mOTEwZjdiZjkyMDM1MTMxL0lRRGlnZTFrcjNJY1FKUHdXbndXYjR2RUFRS0VyY2x5RU5qUDFrdGpJZ0hFLTZFP2U9Ukh4U3h3&v=photos"}
+                    href={"/videos/Task_AI.mp4"}
                   >
                     <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
@@ -188,6 +188,94 @@ const Project = () => {
 
 
 
+
+            {/* { Project 6 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/blogweb.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Blog Website
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Blog
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    This is the Blog Website related to Real World Modern
+                    Technologies. I have made this using Next.js during
+                    Hackathon at Governor House.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://blog-website-next-js-red.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+            {/* { Project 5 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/coffeeshop.png")}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                    Coffee Shop Website
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Coffee Shop
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                    Start your day right with a cup of our freshly brewed
+                    coffee.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://coffee-shop-website-eight.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
  {/* { Project 4 } */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -233,88 +321,6 @@ const Project = () => {
 
 
 
-            {/* { Project 5 } */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              whileHover={{
-                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
-                scale: 1.02,
-              }}
-              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
-            >
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/coffeeshop.png")}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Coffee Shop Website
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Coffee Shop
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2 text-gray-700">
-                    Start your day right with a cup of our freshly brewed
-                    coffee.
-                  </p>
-                  <Link
-                    target="_blank"
-                    href={"https://coffee-shop-website-eight.vercel.app/"}
-                  >
-                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
-                      View Live
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* { Project 6 } */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              whileHover={{
-                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
-                scale: 1.02,
-              }}
-              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
-            >
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../public/pictures/blogweb.png")}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    Blog Website
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Blog
-                  </h1>
-                  <p className="leading-relaxed line-clamp-2 text-gray-700">
-                    This is the Blog Website related to Real World Modern
-                    Technologies. I have made this using Next.js during
-                    Hackathon at Governor House.
-                  </p>
-                  <Link
-                    target="_blank"
-                    href={"https://blog-website-next-js-red.vercel.app/"}
-                  >
-                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
-                      View Live
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
 
 
 

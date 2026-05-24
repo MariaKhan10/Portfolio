@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html, body {
+  overflow-x: hidden;
+}
+
 @keyframes borderGlow {
     0% {
       border-color: rgba(0, 123, 255, 0.3);
