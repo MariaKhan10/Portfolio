@@ -175,7 +175,7 @@ const Project = () => {
                   </p>
                   <Link
                     target="_blank"
-                    href={"https://mariakhan10.github.io/AI-Spec-Driven-Book/"}
+                    href={"https://res.cloudinary.com/dxvor3jom/video/upload/q_auto/f_auto/v1779745637/AI_Book_esh3cp.mp4"}
                   >
                     <p className="leading-relaxed text-blue-500 font-bold hover:underline">
                       View Live
