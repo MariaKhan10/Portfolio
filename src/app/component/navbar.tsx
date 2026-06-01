@@ -34,13 +34,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-black/40 backdrop-blur-xl shadow-lg"
-          : "bg-black/90"
-      }`}
-    >
+   <header
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    menuOpen
+      ? "bg-black"
+      : scrolled
+      ? "bg-black/40 backdrop-blur-xl shadow-lg"
+      : "bg-black/90"
+  }`}
+>
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-6">
         
         {/* LOGO */}
@@ -82,7 +84,7 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="fixed inset-0 z-[999] bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center">
+      <div className="fixed inset-0 z-[999] bg-black backdrop-blur-xl flex flex-col items-center justify-center">
           
           <button
             onClick={() => setMenuOpen(false)}
