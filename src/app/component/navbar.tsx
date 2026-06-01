@@ -34,8 +34,8 @@ const Navbar = () => {
   }, []);
 
   return (
-   <header
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+ <header
+  className={`fixed top-0 left-0 w-full z-50 ${
     menuOpen
       ? "bg-black"
       : scrolled
@@ -43,7 +43,7 @@ const Navbar = () => {
       : "bg-black/90"
   }`}
 >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-6 transition-all duration-300">
         
         {/* LOGO */}
         <span
