@@ -187,6 +187,95 @@ const Project = () => {
 
 
 
+ {/* { Project 3 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }} // 👈 yeh ensure karega ke scroll pe chale
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/accessaudit.png")}
+                />
+                <div className="px-10 py-8 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                   AccessAudit AI
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Focused accessibility intelligence for turning audit findings into actionable development work.
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                   AccessAudit AI helps teams turn technical accessibility findings into plain-language explanations, user impact, severity, remediation guidance, and actionable next steps without becoming a generic chatbot.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://accessaudit-ai.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+
+
+
+ {/* { Project 3 } */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }} // 👈 yeh ensure karega ke scroll pe chale
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{
+                boxShadow: "0px 4px 30px rgba(0, 123, 255, 0.5)",
+                scale: 1.02,
+              }}
+              className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+            >
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={require("../../../public/pictures/moviehub.png")}
+                />
+                <div className="px-6 py-5 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
+                   MovieHub
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    A React movie discovery app built with AI-assisted development, featuring OMDb search, Firebase authentication, and personalized favourites.
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2 text-gray-700">
+                   MovieHub is a movie discovery application built with React. Users can search for movies, browse a randomly selected initial collection, authenticate with an account, and save or remove favourite movies.
+                  </p>
+                  <Link
+                    target="_blank"
+                    href={"https://movie-hub-nine-fawn.vercel.app/"}
+                  >
+                    <p className="leading-relaxed text-blue-500 font-bold hover:underline">
+                      View Live
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
+
+
+
 
 
             {/* { Project 6 } */}
